@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.portableText ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+  margin-bottom: 1rem;
+}
+
+.portableText ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Embla-carousel */
+
+.embla {
+  position: relative;
+}
+
+.embla-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla-viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla-container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.embla-slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.embla-slide-inner {
+  position: relative;
+  overflow: hidden;
+}
